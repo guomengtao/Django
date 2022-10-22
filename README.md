@@ -31,3 +31,15 @@ sudo apt install python3-django
   Who is the right comman? A Or B ,What different by these ?
   A: python -m pip install Django
   B: sudo apt install python3-django
+## runing Django 
+
+I running at Ubuntu Multipass ,this could run windows/macOS ,let we use same setup ,even win/macOS
+
+vim edit settings.py check "a" to edit the file
+
+ALLOWED_HOSTS = ['*'] // if you are in dev or docker
+
+set the ip
+
+use command : ip a /address to see the ip adderess
+
