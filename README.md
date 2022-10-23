@@ -31,7 +31,7 @@ sudo apt install python3-django
   Who is the right comman? A Or B ,What different by these ?
   A: python -m pip install Django
   B: sudo apt install python3-django
-## runing Django 
+# runing Django 
 
 I running at Ubuntu Multipass ,this could run windows/macOS ,let we use same setup ,even win/macOS
 
@@ -43,3 +43,16 @@ set the ip
 
 use command : ip a /address to see the ip adderess
 
+# Update files on Multipass use the home mounts files 
+
+mount failed: source "<path_to_dir>" is not readable
+
+Set for macOS : multipassd in Settings -> Security & Privacy -> Privacy.
+
+
+Mounts:         /Users/event                           => Home (this is deafalt )
+                    UID map: 501:default
+                    GID map: 20:default
+                /Users/event/Documents/webcode/tomcode => /Users/event/Documents/webcode/tomcode (same path if do note set)
+                    UID map: 501:default
+                    GID map: 20:default
