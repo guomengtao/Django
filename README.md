@@ -1,3 +1,4 @@
+
 # Django
 First Learning Django and Python Notes
 
@@ -49,6 +50,12 @@ mount failed: source "<path_to_dir>" is not readable
 
 Set for macOS : multipassd in Settings -> Security & Privacy -> Privacy.
 
+    
+    enter code here
+
+
+
+```bash
 
 Mounts:         /Users/event                           => Home (this is deafalt )
                     UID map: 501:default
@@ -56,3 +63,43 @@ Mounts:         /Users/event                           => Home (this is deafalt 
                 /Users/event/Documents/webcode/tomcode => /Users/event/Documents/webcode/tomcode (same path if do note set)
                     UID map: 501:default
                     GID map: 20:default
+ ```                   
+                    
+# link to remote mySQL 
+
+###  Add mysql command on Ubuntu
+sudo mysql
+or 
+Enter the mysql command your shell will show you one install command ,have a try
+
+###  link remote mysql by password :
+
+To directly login to a remote mysql console, use the below command:
+
+```bash
+mysql -u {username} -p'{password}' \
+    -h {remote server ip or name} -P {port} \
+    -D {DB name}
+```
+For example
+```bash
+mysql -u root -p'root' \
+        -h 127.0.0.1 -P 3306 \
+        -D local
+```
+### Gave up the mysql command line 
+When same times stop enter the command line use \c
+```bash
+mysql> show
+->
+->
+->
+->\c
+```
+ \q  is exit the mysql 
+ \c  is stop the command line
+ 
+### Show the tables or Databases
+>SHOW  TABLES;
+and
+>SHOW DATABASES;
